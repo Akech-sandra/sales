@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Agent Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        display: flex;
+    }
+    
+    .sidebar {
+        width: 250px;
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        position: fixed;
+        height: 100%;
+        overflow-y: auto;
+    }
+    
+    .sidebar h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .sidebar ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    .sidebar ul li {
+        margin-bottom: 10px;
+    }
+    
+    .sidebar ul li a {
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        padding: 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+    
+    .sidebar ul li a:hover {
+        background-color: #575757;
+    }
+    
+    .main-content {
+        margin-left: 270px;
+        padding: 20px;
+        width: calc(100% - 270px);
+    }
+    
+    header {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    h1 {
+        font-size: 2.5em;
+        color: #333;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+        color: #333;
+        margin-bottom: 10px;
+    }
+    
+    section {
+        margin-bottom: 30px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .card {
+        background-color: #e7e7e7;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 3px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .card:hover {
+        background-color: #d4d4d4;
+    }
+    
+    .card:nth-child(odd) {
+        background-color: #f9f9f9;
+    }
+    
+    section h2 {
+        border-bottom: 2px solid #333;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+    }
+    
+</style>
+<body>
+    <div class="sidebar">
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="#summary">Sales Summary</a></li>
+            <li><a href="#inventory">Inventory Overview</a></li>
+            <li><a href="#customer-management">Customer Management</a></li>
+            <li><a href="#order-management">Order Management</a></li>
+            <li><a href="#sales-analytics">Sales Analytics</a></li>
+            <li><a href="#promotions">Promotions and Discounts</a></li>
+            <li><a href="#communication">Communication Tools</a></li>
+            <li><a href="#training-resources">Training and Resources</a></li>
+            <li><a href="#performance-metrics">Personal Performance Metrics</a></li>
+            <li><a href="#administrative-tools">Administrative Tools</a></li>
+            <li><a href="#technical-support">Technical Support</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <header>
+            <h1>Sales Agent Dashboard</h1>
+        </header>
+        <section id="summary" class="summary">
+            <h2>Sales Summary</h2>
+            <div class="card">Daily Sales: $1,000</div>
+            <div class="card">Monthly Sales: $30,000</div>
+            <div class="card">Yearly Sales: $360,000</div>
+            <div class="card">Sales Targets: 75%</div>
+        </section>
+        <section id="inventory" class="inventory">
+            <h2>Inventory Overview</h2>
+            <div class="card">Stock Levels: 1000 units</div>
+            <div class="card">Low Stock Alerts: 5 items</div>
+            <div class="card">New Arrivals: 20 items</div>
+        </section>
+        <section id="customer-management" class="customer-management">
+            <h2>Customer Management</h2>
+            <div class="card">Customer Profiles</div>
+            <div class="card">Loyalty Program</div>
+            <div class="card">Customer Queries</div>
+        </section>
+        <section id="order-management" class="order-management">
+            <h2>Order Management</h2>
+            <div class="card">Current Orders</div>
+            <div class="card">Order History</div>
+            <div class="card">Order Processing</div>
+        </section>
+        <section id="sales-analytics" class="sales-analytics">
+            <h2>Sales Analytics</h2>
+            <div class="card">Sales Trends</div>
+            <div class="card">Top Products</div>
+            <div class="card">Sales by Category</div>
+        </section>
+        <section id="promotions" class="promotions">
+            <h2>Promotions and Discounts</h2>
+            <div class="card">Active Promotions</div>
+            <div class="card">Upcoming Promotions</div>
+            <div class="card">Promotion Performance</div>
+        </section>
+        <section id="communication" class="communication">
+            <h2>Communication Tools</h2>
+            <div class="card">Internal Messaging</div>
+            <div class="card">Notifications</div>
+        </section>
+        <section id="training-resources" class="training-resources">
+            <h2>Training and Resources</h2>
+            <div class="card">Training Materials</div>
+            <div class="card">Knowledge Base</div>
+        </section>
+        <section id="performance-metrics" class="performance-metrics">
+            <h2>Personal Performance Metrics</h2>
+            <div class="card">Sales Performance</div>
+            <div class="card">Customer Satisfaction</div>
+            <div class="card">Task Management</div>
+        </section>
+        <section id="administrative-tools" class="administrative-tools">
+            <h2>Administrative Tools</h2>
+            <div class="card">Shift Schedule</div>
+            <div class="card">Leave Requests</div>
+            <div class="card">Expense Claims</div>
+        </section>
+        <section id="technical-support" class="technical-support">
+            <h2>Technical Support</h2>
+            <div class="card">Help Desk</div>
+            <div class="card">System Status</div>
+        </section>
+    </div>
+</body>
+</html>
